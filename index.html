@@ -12,25 +12,33 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="index.html">
-                <img src="logo2.png" width="168" height="28">
-            </a>
+        <header>
+            <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                        <img src="logo2.png" width="112" height="28">
+                    </a>
 
-            <div class="mobile-menu">
-                <div class="a"></div>
-                <div class="b"></div>
-                <div class="c"></div>
-            </div>
-            <ul class="nav-list">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
 
-    <div>
+                <div id="navbarBasicExample" class="navbar-menu is-active">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="index.html">
+                            Início
+                        </a>
+                        <a class="navbar-item" href="contact.html">
+                            Contato
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <section class="section">
             <div class="container">
                 <div class="columns">
@@ -38,7 +46,8 @@
                         <div class="card">
                             <div class="card-image">
                                 <figure class="image is-4by3">
-                                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                    <img src="https://bulma.io/images/placeholders/1280x960.png"
+                                        alt="Placeholder image">
                                 </figure>
                             </div>
                             <div class="card-content">
@@ -49,7 +58,7 @@
                                         <span class="tag is-dark is-medium">JavaScript FullStack Developer</span>
                                     </div>
                                 </div>
-    
+
                                 <div class="content">
                                     Dev. <a>@bulmaio</a>.
                                     <a href="#">#css</a>
@@ -76,7 +85,7 @@
                                     perferendis enim,
                                     neque soluta dolore sequi id rem iste ex eveniet assumenda nam inventore sunt,
                                     officia nostrum et, obcaecati quas.
-    
+
                                 </div>
                             </div>
                         </div>
@@ -180,11 +189,5 @@
                 </div>
             </div>
         </section>
-    </div>
-
-    
-
-    <script src="mobile-navbar.js"></script>
 </body>
-
 </html>
