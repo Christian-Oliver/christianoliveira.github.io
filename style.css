@@ -4,23 +4,43 @@
     text-decoration: none;
 }
 
+html{
+    /* A cada 1rem, 10px são preenchidos */
+    font-size: 62.5%;
+}
 
 body{
-    padding-top: 30px;
-    background-color: #23232e;
+    padding-top: 3rem;
+    background-color: #282833;
     min-width: 100vw;
     min-height: 100vh;
 }
 
 .content{
-    margin-top: 40px;
-    margin-left: 1.75rem;
-    margin-right: 1.75rem;
+    margin: 4rem;
     display: flex;
-    /* flex-wrap: wrap; */
     color: black;
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card-tittle{
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0;
+    font-size: 2rem;
+    text-indent: 30px;
+}
+
+.tag{
+    color: #fff;
+    background-color: #363636;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 4px;
+    
 }
 
 .card-image img{
@@ -42,6 +62,7 @@ body{
 
 .card .card-content{
     padding: 1.5rem;
+    font-size: 2rem;
 }
 
 .nav-bar a{
@@ -60,6 +81,7 @@ nav{
     font-family: system-ui, Arial, Helvetica, sans-serif;
     background: #222;
     height: 10vh;
+    font-size: 1.6rem;
 }
 
 .nav-list{
@@ -78,26 +100,21 @@ nav{
 }
 
 .mobile-menu div{
-    width: 32px;
-    height: 2px;
+    width: 3.2rem;
+    height: 0.2rem;
     background: #fff;
-    margin: 8px;
+    margin: 0.8rem;
     transition: 0.3s;
 }
 
-@media only screen and (max-width: 920px){
-    .content{
-        flex-wrap: wrap;
-    }
-}
 
-@media (max-width: 999px){
+@media (max-width: 880px){
     body{
         overflow-x: hidden;
     }
     .nav-list{
         position: absolute;
-        top: 14vh;
+        top: 13vh;
         right: 0;
         width: 50vw;
         height: 92vh;
@@ -116,6 +133,10 @@ nav{
 
     .mobile-menu{
         display: block;
+    }
+
+    .content{
+        flex-wrap: wrap;
     }
 }
 
