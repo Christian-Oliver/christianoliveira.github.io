@@ -10,19 +10,32 @@ html{
 }
 
 body{
-    padding-top: 3rem;
     background-color: #282833;
     min-width: 100vw;
     min-height: 100vh;
 }
 
+a{
+    color: #222 !important;
+}
+
 .content{
-    margin: 4rem;
+    margin: 4rem 20rem 4rem 20rem;
     display: flex;
     color: black;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+}
+
+.social{
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
 }
 
 .card-tittle{
@@ -34,23 +47,24 @@ body{
     text-indent: 30px;
 }
 
+.principal-name{
+    font-family: sans-serif, system-ui, Arial, Helvetica;
+    font-size: 2.3rem;
+    margin-bottom: 2.3rem;
+}
+
 .tag{
+    font-family: Arial, system-ui, Helvetica, sans-serif;
+    width:fit-content;
     color: #fff;
     background-color: #222;
     border-radius: 4px;
-    font-size: 1rem;
-    padding: 4px;
-    
-}
-
-.card-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.card-image{
-    width: 300px;
+    font-size: 1.8rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 2rem;
 }
 
 .card{
@@ -60,9 +74,18 @@ body{
     max-width: 100%;
 }
 
-.card .card-content{
+.content .card .card-content{
     padding: 1.5rem;
     font-size: 2rem;
+}
+
+.content .card-image img{
+    width: 30rem;
+}
+
+.nav-bar a img{
+    width: 15rem;
+    height: 8rem;
 }
 
 .nav-bar a{
@@ -80,9 +103,10 @@ nav{
     align-items: center;
     font-family: system-ui, Arial, Helvetica, sans-serif;
     background: #222;
-    height: 10vh;
+    height: 8vh;
     font-size: 1.6rem;
 }
+
 
 .nav-list{
     list-style: none;
@@ -108,7 +132,7 @@ nav{
 }
 
 
-@media (max-width: 880px){
+@media (max-width: 999px){
     body{
         overflow-x: hidden;
     }
@@ -125,7 +149,7 @@ nav{
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
     }
-
+    
     .nav-list li{
         margin-left: 0;
         opacity: 0;
@@ -136,9 +160,18 @@ nav{
     }
 
     .content{
-        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        margin: 4rem;
     }
 }
+
+@media (max-width: 400px){
+    .content .card-image img{
+        width: 100%;
+    }
+}
+
 
 .nav-list.active{
     transform: translateX(0);
