@@ -1,1 +1,1 @@
-# 📚 Just a site created to put into practice what I've been learning.
+# 📚 Just a site created to test what I've been learning.
